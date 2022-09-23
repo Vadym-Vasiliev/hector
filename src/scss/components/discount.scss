@@ -1,0 +1,50 @@
+.discount {
+  padding-top: 30px;
+  padding-bottom: 40px;
+
+  background-color: $bg-gray;
+}
+
+.discount-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 39px;
+
+  &__img > img {
+    width: 257px;
+  }
+
+  &__img {
+    &--width {
+      margin-bottom: -20px;
+    }
+  }
+
+  &__item {
+    max-width: 534px;
+    display: flex;
+    align-items: center;
+
+    background-color: $white;
+  }
+
+  &__content {
+    padding: 50px 25px 50px 0;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 13px;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: #0f0f0f;
+  }
+}
