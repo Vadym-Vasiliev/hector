@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 65px;
-  max-width: 440px;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
 
@@ -79,10 +79,10 @@
   flex-wrap: wrap;
   gap: 60px;
   margin-bottom: 75px;
+
   &__item {
     max-width: 810px;
     text-align: center;
-    opacity: 0.5;
     padding: 100px 120px;
 
     background-color: rgba(15, 15, 15);

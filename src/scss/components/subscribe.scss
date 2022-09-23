@@ -23,6 +23,22 @@
   align-items: center;
   gap: 30px;
   margin-left: 60px;
+
+  &__link {
+    display: block;
+
+    &:hover,
+    &:focus {
+      .subscribe-center-soclist__svg {
+        fill: #8787879d;
+      }
+    }
+  }
+
+  &__svg {
+    transition: 250ms linear;
+    fill: $gray;
+  }
 }
 
 .subscribe-right {

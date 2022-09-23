@@ -3,8 +3,17 @@ header.header
     .header__body
       .header__left 
         ul.header-list
-          li.header-list__item
+          li.header-list__item.header-list__item--trigger
             a.header-list__link(href="#") КАТАЛОГ
+              svg.header-list__svg(width="13" height="8")
+                use(href="img/icons/icons.svg#header-down")
+            ul.header-list-menu
+              li.header-list-menu__item
+                a.header-list-menu__link.main-btn(href="#") Мужская одежда
+              li.header-list-menu__item
+                a.header-list-menu__link.main-btn(href="#") Женская одежда
+              li.header-list-menu__item
+                a.header-list-menu__link.main-btn(href="#") Детская одежда
           li.header-list__item
             a.header-list__link(href="#") SALE
           li.header-list__item
