@@ -1,257 +1,3 @@
-/*! modern-normalize v0.6.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
-/*
-Document
-========
-*/
-/**
-Use a better box model (opinionated).
-*/
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/**
-Use a more readable tab size (opinionated).
-*/
-:root {
-  -moz-tab-size: 4;
-  tab-size: 4;
-}
-
-/**
-1. Correct the line height in all browsers.
-2. Prevent adjustments of font size after orientation changes in iOS.
-*/
-html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
-
-/*
-Sections
-========
-*/
-/**
-Remove the margin in all browsers.
-*/
-body {
-  margin: 0;
-}
-
-/**
-Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
-*/
-body {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-}
-
-/*
-Grouping content
-================
-*/
-/**
-Add the correct height in Firefox.
-*/
-hr {
-  height: 0;
-}
-
-/*
-Text-level semantics
-====================
-*/
-/**
-Add the correct text decoration in Chrome, Edge, and Safari.
-*/
-abbr[title] {
-  text-decoration: underline dotted;
-}
-
-/**
-Add the correct font weight in Edge and Safari.
-*/
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
-1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
-2. Correct the odd 'em' font sizing in all browsers.
-*/
-code,
-kbd,
-samp,
-pre {
-  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-
-/**
-Add the correct font size in all browsers.
-*/
-small {
-  font-size: 80%;
-}
-
-/**
-Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
-*/
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/*
-Forms
-=====
-*/
-/**
-1. Change the font styles in all browsers.
-2. Remove the margin in Firefox and Safari.
-*/
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
-}
-
-/**
-Remove the inheritance of text transform in Edge and Firefox.
-1. Remove the inheritance of text transform in Firefox.
-*/
-button,
-select {
-  /* 1 */
-  text-transform: none;
-}
-
-/**
-Correct the inability to style clickable types in iOS and Safari.
-*/
-button,
-[type=button],
-[type=reset],
-[type=submit] {
-  -webkit-appearance: button;
-}
-
-/**
-Remove the inner border and padding in Firefox.
-*/
-button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
-Restore the focus styles unset by the previous rule.
-*/
-button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
-Correct the padding in Firefox.
-*/
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-/**
-Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
-*/
-legend {
-  padding: 0;
-}
-
-/**
-Add the correct vertical alignment in Chrome and Firefox.
-*/
-progress {
-  vertical-align: baseline;
-}
-
-/**
-Correct the cursor style of increment and decrement buttons in Safari.
-*/
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
-1. Correct the odd appearance in Chrome and Safari.
-2. Correct the outline style in Safari.
-*/
-[type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
-}
-
-/**
-Remove the inner padding in Chrome and Safari on macOS.
-*/
-[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Change font properties to 'inherit' in Safari.
-*/
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-}
-
-/*
-Interactive
-===========
-*/
-/*
-Add the correct display in Chrome and Safari.
-*/
-summary {
-  display: list-item;
-}
-
 h1,
 h2,
 h3,
@@ -310,6 +56,77 @@ body {
   border: 1px solid #0f0f0f;
   display: inline-block;
   color: #0f0f0f;
+}
+
+.main-card-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+.main-card-list__item {
+  position: relative;
+  max-width: 376px;
+}
+.main-card-list__item::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 63px;
+  height: 63px;
+  background-image: url(../../img/discount-new.png);
+  background-repeat: no-repeat;
+}
+.main-card-list__item .main-card-list__img {
+  width: 374px;
+}
+.main-card-list__item .main-card-list__content {
+  padding: 10px;
+}
+.main-card-list__item .main-card-list__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.main-card-list__item .main-card-list__list-star {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.main-card-list__item .main-card-list__svg-star {
+  fill: #0f0f0f;
+}
+.main-card-list__item .main-card-list__svg-star--color {
+  fill: #ffffff;
+  stroke: #0f0f0f;
+}
+.main-card-list__item .main-card-list__list-size {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.main-card-list__item .main-card-list__span-size {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #cecece;
+}
+.main-card-list__item .main-card-list__span-size--color {
+  color: #0f0f0f;
+}
+.main-card-list__item .main-card-list__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 25px;
+}
+.main-card-list__item .main-card-list__price {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
 }
 
 .header {
@@ -386,7 +203,6 @@ body {
 
 .main {
   padding-top: 260px;
-  padding-bottom: 300px;
 }
 .main__body {
   display: flex;
@@ -463,4 +279,67 @@ body {
   font-size: 16px;
   line-height: 1.25;
   color: #0f0f0f;
+}
+
+.products {
+  padding-top: 90px;
+  padding-bottom: 96px;
+}
+
+.products-top-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 105px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+.products-top-list::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #0f0f0f;
+}
+.products-top-list__item {
+  text-align: center;
+  min-width: 180px;
+  cursor: pointer;
+  padding: 20px;
+}
+.products-top-list__input {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.products-top-list__input:checked ~ .products-top-list__span::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: #0f0f0f;
+}
+.products-top-list__input:checked ~ .products-top-list__span::after {
+  color: #0f0f0f;
+}
+.products-top-list__span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  cursor: pointer;
+  color: #878787;
 }

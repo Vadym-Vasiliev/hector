@@ -34,3 +34,89 @@ body {
 
   color: $black;
 }
+
+.main-card-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+
+  &__item {
+    position: relative;
+    max-width: 376px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 63px;
+      height: 63px;
+
+      background-image: url(../../img/discount-new.png);
+      background-repeat: no-repeat;
+    }
+
+    .main-card-list__img {
+      width: 374px;
+    }
+
+    .main-card-list__content {
+      padding: 10px;
+    }
+
+    .main-card-list__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15px;
+    }
+
+    .main-card-list__list-star {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .main-card-list__svg-star {
+      fill: $black;
+
+      &--color {
+        fill: $white;
+        stroke: $black;
+      }
+    }
+
+    .main-card-list__list-size {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .main-card-list__span-size {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 1.2;
+
+      color: $color-ce;
+
+      &--color {
+        color: $black;
+      }
+    }
+
+    .main-card-list__desc {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+      margin-bottom: 25px;
+    }
+
+    .main-card-list__price {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 1.2;
+    }
+  }
+}
