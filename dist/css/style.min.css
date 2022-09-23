@@ -245,6 +245,8 @@ body {
 }
 
 .main-right__img {
+  position: relative;
+  z-index: -1;
   margin-top: -350px;
 }
 
@@ -560,4 +562,116 @@ body {
 }
 .subscribe-right-form__btn:hover, .subscribe-right-form__btn:focus {
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.info {
+  padding-top: 190px;
+  padding-bottom: 140px;
+  background-color: #636363;
+  background-image: url(../img/info-decor.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 100px;
+}
+.info__body {
+  display: flex;
+  align-items: center;
+}
+
+.info-left__img {
+  width: 175px;
+}
+
+.info-center-list {
+  display: flex;
+  align-items: center;
+  gap: 140px;
+  margin-left: 195px;
+}
+.info-center-list__list {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+.info-center-list__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 64px;
+  color: #ffffff;
+}
+.info-center-list__list-link {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2;
+  display: inline-block;
+  transition: 250ms linear;
+  color: rgba(255, 255, 255, 0.75);
+}
+.info-center-list__list-link::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 250ms linear;
+  background-color: #ffffff;
+}
+.info-center-list__list-link:hover::after, .info-center-list__list-link:focus::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.info-center-list__list-link:hover, .info-center-list__list-link:focus {
+  color: #ffffff;
+}
+
+.info-right {
+  margin-left: auto;
+}
+.info-right__top {
+  margin-bottom: 45px;
+}
+
+.info-right-tellist__link {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.7;
+  transition: 250ms linear;
+  color: #ffffff;
+}
+.info-right-tellist__link:hover, .info-right-tellist__link:focus {
+  color: rgba(255, 255, 255, 0.638);
+}
+
+.info-right-soclist {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.info-right-soclist__list-left {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.info-right-soclist__list-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.info-right-soclist__link {
+  display: block;
+  transition: 250ms linear;
+}
+.info-right-soclist__link:hover, .info-right-soclist__link:focus {
+  transform: scale(1.1);
+}
+.info-right-soclist__link:hover .info-right-soclist__svg, .info-right-soclist__link:focus .info-right-soclist__svg {
+  fill: rgba(255, 255, 255, 0.642);
+}
+.info-right-soclist__svg {
+  fill: #ffffff;
 }
