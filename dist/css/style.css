@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -293,7 +299,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 105px;
-  max-width: 750px;
+  max-width: 870px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;
@@ -308,6 +314,7 @@ body {
   background-color: #0f0f0f;
 }
 .products-top-list__item {
+  position: relative;
   text-align: center;
   min-width: 180px;
   cursor: pointer;
@@ -334,7 +341,7 @@ body {
   height: 6px;
   background-color: #0f0f0f;
 }
-.products-top-list__input:checked ~ .products-top-list__span::after {
+.products-top-list__input:checked ~ .products-top-list__span {
   color: #0f0f0f;
 }
 .products-top-list__span {
@@ -342,6 +349,7 @@ body {
   font-size: 18px;
   line-height: 1.22;
   cursor: pointer;
+  transition: 250ms linear;
   color: #878787;
 }
 
@@ -353,6 +361,136 @@ body {
   transition: 250ms linear;
 }
 .products-bottom__btn > a:hover, .products-bottom__btn > a:focus {
+  border-color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.12);
+}
+
+.reviews {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f5f5f5;
+}
+
+.reviews-top-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 65px;
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.reviews-top-list::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #0f0f0f;
+}
+.reviews-top-list__item {
+  position: relative;
+  min-width: 180px;
+  cursor: pointer;
+  text-align: center;
+  padding: 20px;
+}
+.reviews-top-list__input {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.reviews-top-list__input:checked ~ .reviews-top-list__span::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: #0f0f0f;
+}
+.reviews-top-list__input:checked ~ .reviews-top-list__span {
+  color: #0f0f0f;
+}
+.reviews-top-list__span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  cursor: pointer;
+  transition: 250ms linear;
+  color: #878787;
+}
+
+.reviews-bottom-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-bottom: 75px;
+}
+.reviews-bottom-list__item {
+  max-width: 810px;
+  text-align: center;
+  opacity: 0.5;
+  padding: 100px 120px;
+  background-color: rgb(15, 15, 15);
+  background-image: url(../img/reviews-main-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+}
+.reviews-bottom-list__content {
+  margin-bottom: 30px;
+  max-width: 559px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.reviews-bottom-list__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.22;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.reviews-bottom-list__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+}
+.reviews-bottom-list__btn > a {
+  padding: 20px 95px;
+  transition: 250ms linear;
+  border: none;
+  background-color: #ffffff;
+}
+.reviews-bottom-list__btn > a:hover, .reviews-bottom-list__btn > a:focus {
+  border-color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.12);
+}
+
+.reviews-bottom > .reviews-bottom__btn {
+  text-align: center;
+}
+.reviews-bottom__btn > a {
+  padding: 25px 75px;
+  transition: 250ms linear;
+}
+.reviews-bottom__btn > a:hover, .reviews-bottom__btn > a:focus {
   border-color: rgba(0, 0, 0, 0.5);
   color: rgba(0, 0, 0, 0.5);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.12);

@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   gap: 105px;
-  max-width: 750px;
+  max-width: 870px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;
@@ -26,6 +26,7 @@
   }
 
   &__item {
+    position: relative;
     text-align: center;
     min-width: 180px;
     cursor: pointer;
@@ -55,7 +56,7 @@
       background-color: $black;
     }
 
-    &:checked ~ .products-top-list__span::after {
+    &:checked ~ .products-top-list__span {
       color: $black;
     }
   }
@@ -65,6 +66,7 @@
     font-size: 18px;
     line-height: 1.22;
     cursor: pointer;
+    transition: 250ms linear;
 
     color: $gray;
   }

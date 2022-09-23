@@ -1,0 +1,156 @@
+.reviews {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  background-color: $bg-gray;
+}
+
+.reviews-top-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 65px;
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+
+    background-color: $black;
+  }
+
+  &__item {
+    position: relative;
+    min-width: 180px;
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+  }
+
+  &__input {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+
+    &:checked ~ .reviews-top-list__span::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+
+      background-color: $black;
+    }
+
+    &:checked ~ .reviews-top-list__span {
+      color: $black;
+    }
+  }
+
+  &__span {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    cursor: pointer;
+    transition: 250ms linear;
+
+    color: $gray;
+  }
+}
+
+.reviews-bottom-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-bottom: 75px;
+  &__item {
+    max-width: 810px;
+    text-align: center;
+    opacity: 0.5;
+    padding: 100px 120px;
+
+    background-color: rgba(15, 15, 15);
+    background-image: url(../img/reviews-main-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+  }
+
+  &__content {
+    margin-bottom: 30px;
+    max-width: 559px;
+
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.22;
+    margin-bottom: 20px;
+
+    color: $white;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: $white;
+  }
+
+  &__btn > a {
+    padding: 20px 95px;
+    transition: 250ms linear;
+    border: none;
+
+    background-color: $white;
+
+    &:hover,
+    &:focus {
+      border-color: rgba(0, 0, 0, 0.5);
+      color: rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 10px 20px rgb(0 0 0 / 12%), 0px 2px 6px rgb(0 0 0 / 12%),
+        0px 0px 1px rgb(0 0 0 / 12%);
+    }
+  }
+}
+
+.reviews-bottom {
+  & > .reviews-bottom__btn {
+    text-align: center;
+  }
+  &__btn > a {
+    padding: 25px 75px;
+    transition: 250ms linear;
+
+    &:hover,
+    &:focus {
+      border-color: rgba(0, 0, 0, 0.5);
+      color: rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 10px 20px rgb(0 0 0 / 12%), 0px 2px 6px rgb(0 0 0 / 12%),
+        0px 0px 1px rgb(0 0 0 / 12%);
+    }
+  }
+}
