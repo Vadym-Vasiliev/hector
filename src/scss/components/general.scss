@@ -1,3 +1,7 @@
+html {
+  font-size: 1rem;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.07em;
@@ -21,11 +25,12 @@ body {
   margin-right: auto;
 }
 
-.main-btn {
+.main-btn > a {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.22;
   border: 1px solid #0f0f0f;
+  display: inline-block;
 
   color: $black;
 }

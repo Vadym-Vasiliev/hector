@@ -1,6 +1,6 @@
 .header {
   padding-top: 33px;
-  padding-bottom: 53px;
+  padding-bottom: 33px;
 
   &__body {
     display: flex;
@@ -48,7 +48,7 @@
       transform-origin: bottom right;
       transition: transform 250ms linear;
 
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: $hover;
     }
 
     &:hover::after,
@@ -59,7 +59,7 @@
 
     &:hover,
     &:focus {
-      color: rgba(0, 0, 0, 0.5);
+      color: $hover;
     }
   }
 }
@@ -78,7 +78,7 @@
     &:focus {
       transform: scale(1.1);
       .header-right-list__svg {
-        fill: rgba(0, 0, 0, 0.5);
+        fill: $hover;
       }
     }
   }

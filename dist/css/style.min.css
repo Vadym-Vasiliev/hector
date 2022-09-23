@@ -277,6 +277,10 @@ img {
   height: auto;
 }
 
+html {
+  font-size: 1rem;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.07em;
@@ -299,17 +303,18 @@ body {
   margin-right: auto;
 }
 
-.main-btn {
+.main-btn > a {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.22;
   border: 1px solid #0f0f0f;
+  display: inline-block;
   color: #0f0f0f;
 }
 
 .header {
   padding-top: 33px;
-  padding-bottom: 53px;
+  padding-bottom: 33px;
 }
 .header__body {
   display: flex;
@@ -377,4 +382,45 @@ body {
 }
 .header-right-list__svg {
   fill: #0f0f0f;
+}
+
+.main {
+  padding-top: 260px;
+  padding-bottom: 300px;
+}
+.main__body {
+  display: flex;
+  align-items: flex-start;
+  gap: 100px;
+}
+
+.main-left {
+  max-width: 728px;
+}
+.main-left__content {
+  margin-bottom: 60px;
+}
+.main-left__title > h1 {
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 1;
+  margin-bottom: 22px;
+}
+.main-left__text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.21;
+}
+.main-left__btn > a {
+  padding: 25px 90px;
+  transition: 250ms linear;
+}
+.main-left__btn > a:hover, .main-left__btn > a:focus {
+  border-color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.12);
+}
+
+.main-right__img {
+  margin-top: -350px;
 }
