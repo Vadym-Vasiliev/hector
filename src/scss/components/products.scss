@@ -69,3 +69,21 @@
     color: $gray;
   }
 }
+
+.products-bottom {
+  & > .main-btn {
+    text-align: center;
+  }
+  &__btn > a {
+    padding: 25px 60px;
+    transition: 250ms linear;
+
+    &:hover,
+    &:focus {
+      border-color: $hover;
+      color: $hover;
+      box-shadow: 0px 10px 20px rgb(0 0 0 / 12%), 0px 2px 6px rgb(0 0 0 / 12%),
+        0px 0px 1px rgb(0 0 0 / 12%);
+    }
+  }
+}

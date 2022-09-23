@@ -64,6 +64,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 60px;
+  margin-bottom: 70px;
 }
 .main-card-list__item {
   position: relative;
@@ -342,4 +343,17 @@ body {
   line-height: 1.22;
   cursor: pointer;
   color: #878787;
+}
+
+.products-bottom > .main-btn {
+  text-align: center;
+}
+.products-bottom__btn > a {
+  padding: 25px 60px;
+  transition: 250ms linear;
+}
+.products-bottom__btn > a:hover, .products-bottom__btn > a:focus {
+  border-color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.12);
 }
