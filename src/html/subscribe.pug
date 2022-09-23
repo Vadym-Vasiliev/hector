@@ -1,0 +1,22 @@
+section.subscribe
+  .container
+    .subscribe__body
+      .subscribe-left
+        .subscribe-left__title
+          span Подпишись и следи за новыми поступлениями и акциями
+      .subscribe-center
+        ul.subscribe-center-soclist
+          li.subscribe-center-soclist__item
+            a.subscribe-center-soclist__item(href="#") 
+              svg.subscribe-center-soclist__svg(width="60" height="60")
+                use(href="img/icons/icons.svg#subscribe-1")
+          li.subscribe-center-soclist__item
+            a.subscribe-center-soclist__item(href="#") 
+              svg.subscribe-center-soclist__svg(width="60" height="60")
+                use(href="img/icons/icons.svg#subscribe-2")
+      .subscribe-right
+        form.subscribe-right-form
+          input.subscribe-right-form__input(type="text" name="phone" placeholder="+38 (___) ___-___-__")
+          svg.subscribe-right-form__svg(width="24" height="24")
+            use(href="img/icons/icons.svg#subscribe-tel")
+          button.subscribe-right-form__btn(type="submit") ПОДПИСАТЬСЯ
